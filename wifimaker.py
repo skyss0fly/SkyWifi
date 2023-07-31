@@ -2,6 +2,7 @@ import os
 import socket
 
 class Wifimaker():
+  def __init__ self(Wifimaker):
 self.wifiname = "SkyWifi"
 self.wifipassword = "Lhldy342DJ5SF4"
 
@@ -17,8 +18,6 @@ def connecttowifi():
 
 def devicedetails():
   self.privip = 192.168.1.1
-  self.os = os.model
-  self.location = os.location
 hostname=socket.gethostname()
 IPAddr=socket.gethostbyname(hostname)
 
