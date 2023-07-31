@@ -17,7 +17,6 @@ def connecttowifi():
 
 def devicedetails():
   self.privip = 192.168.1.1
-  self.publip = random(0.0.0.0, 200,200,200)
   self.os = os.model
   self.location = os.location
 hostname=socket.gethostname()
