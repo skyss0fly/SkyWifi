@@ -1,5 +1,5 @@
 import os
-
+import socket
 
 class Wifimaker():
 self.wifiname = "SkyWifi"
@@ -11,12 +11,15 @@ def runwifi():
 
 def connecttowifi():
   if devicedetails.connected is true:
-    print("a device has connected to skywifi: their ip address is", devicedetails.publipip)
+    print("a device has connected to skywifi: their ip address is ", devicedetails.IPAddr, "on device: ", devicedetails.hostname)
   else
-     print("a device has failed to connect to skywifi: their ip address is", devicedetails.publip) 
+     print("a device has failed to connect to skywifi: their ip address is ", devicedetails.IPAddr, "on device: ", devicedetails.hostname) 
 
 def devicedetails():
   self.privip = 192.168.1.1
   self.publip = random(0.0.0.0, 200,200,200)
   self.os = os.model
   self.location = os.location
+hostname=socket.gethostname()
+IPAddr=socket.gethostbyname(hostname)
+
